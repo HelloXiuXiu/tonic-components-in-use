@@ -2,7 +2,9 @@
 
 ## Tonic components usage guide
 
-[Tonic](https://tonicframework.dev/) - a low profile component framework for the web. Website is built with [Vite](https://vitejs.dev/guide/). 
+[Tonic](https://tonicframework.dev/) - a low profile component framework for the web. 
+<br>
+Website is built with [Vite](https://vitejs.dev/guide/). 
 
 To open in browser with local server, run vite: 
 ```sh
