@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Tonic Components in Use">
+  <meta name="author" content="xiu xiu">
+  <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!-- <meta
+    http-equiv="Content-Security-Policy"
+    content="
+      connect-src http://localhost:5173 http://* https://* ipc://* file: socket:* data://*;
+      child-src 'none';
+      img-src https: data: file:;"
+  > -->
+  <meta name="robots" content="none">
+  <title>Tonic components</title>
+</head> 
+<body>
+  <h1>Tonic Components in Use</h1>
+
+  <!-- accordeon -->
+  <section id="Accordion" class="component">
+    <h1 class="component_heading">Accordion</h1>
+    <p>The Accordion component creates a set of interactive headings that hide and show content sections, with Keyboard Support.</p>
+    <div class="component_wrap">
+      <div class="component_demo">
+        <h2>Demo</h2>
+        <tonic-accordion id="my-accordion">
+          <tonic-accordion-section
+            name="bucket-test-1"
+            id="bucket-test-1"
+            data="preview"
+            label="Accordion Test 1">
+            Whatever
+          </tonic-accordion-section>
+          <tonic-accordion-section
+            name="bucket-test-2"
+            id="bucket-test-2"
+            label="Accordion Test 2">
+            Some Content
+          </tonic-accordion-section>
+          <tonic-accordion-section
+            name="bucket-test-3"
+            id="bucket-test-3"
+            label="Accordion Test 3">
+            The visual design includes features intended to help users understand that the accordion provides enhanced keyboard navigation functions. When an accordion header button has keyboard focus, the styling of the accordion container and all its header buttons is changed.
+          </tonic-accordion-section>
+        </tonic-accordion>
+        <pre class="component_code">
+          <code></code>
+        </pre>
+      </div>
+      <div class="component_api">
+        <h2>Api</h2>
+        <ul class="component_props">
+          <li>data-allow-multiple</li>
+          <li>theme</li>
+        </ul>
+        <div class="component_info">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<script type="module" src="main.js"></script>
+</body>
 </html>

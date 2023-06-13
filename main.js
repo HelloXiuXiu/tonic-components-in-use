@@ -1,24 +1,26 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+import Tonic from '@socketsupply/tonic';
+import bundle from '@socketsupply/components';
 
-setupCounter(document.querySelector('#counter'))
+bundle(Tonic) // attach everything
+
+
+let propList = document.querySelector(".component_props").children;
+let accordion = document.getElementById("my-accordion")
+
+function toggleAttrebute(component, property, value) {
+  component.hasAttribute(property) ? component.removeAttribute(property) : component.setAttribute(property, value)
+} 
+
+for (let prop of propList) {
+  prop.addEventListener("click", () => {
+    prop.classList.toggle("active")
+    let attribute = prop.innerText
+    toggleAttrebute(accordion, attribute, "true")
+})
+}
+
+
+
+
