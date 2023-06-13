@@ -1,6 +1,6 @@
 # TONIC COMPOMENTS IN USE
 
-## Tonic components usage guide
+## Usage guide with examples
 
 [Tonic](https://tonicframework.dev/) - a low profile component framework for the web. 
 <br>
