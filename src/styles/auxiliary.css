@@ -1,0 +1,15 @@
+/*
+Auxiliary
+*/
+
+body {
+  margin: 30px;
+}
+h1:not(.component_heading) {
+  font-size: 4em;
+  margin-bottom: 60px;
+}
+.component_heading + p {
+  margin-bottom: 20px;
+  max-width: 40%;
+}

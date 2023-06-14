@@ -1,4 +1,4 @@
-import './style.css'
+import './src/styles/index.css'
 
 import Tonic from '@socketsupply/tonic';
 import bundle from '@socketsupply/components';
