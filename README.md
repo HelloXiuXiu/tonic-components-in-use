@@ -8,7 +8,7 @@ Website is built with [Vite](https://vitejs.dev/guide/).
 
 <br>
 
-See online: [tonic-in-use.netlify.app](https://tonic-in-use.netlify.app/):
+See online: [tonic-in-use.netlify.app](https://tonic-in-use.netlify.app/)
 
 <br>
 
