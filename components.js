@@ -1,16 +1,16 @@
-export default class Component {
+import Tonic from '@socketsupply/tonic'
 
-  constructor(name) {
-    this.name = name
+addEventListener("load", () => {
+  let propButtons = document.querySelectorAll(".component_props li")
+  for (let button of propButtons) {
+    button.onclick = (e) => {
+        for (let button of propButtons) {
+          button.classList.remove("active")
+       }
+       button.classList.add("active")
+    }
   }
+});
 
-  appendComponent(id) {
-    let parser = new DOMParser()
-    let node = parser.parseFromString(this.html, "text/html")
-    console.log(node)
 
-    let parrent = document.getElementById(id)
-    parrent.innerHTML = node.body.innerHTML
-  }
-}
 
