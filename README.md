@@ -7,11 +7,9 @@
 Website is built with [Vite](https://vitejs.dev/guide/). 
 
 <br>
-<br>
 
-See [online](https://tonic-in-use.netlify.app/):
+See online: [tonic-in-use.netlify.app](https://tonic-in-use.netlify.app/):
 
-<br>
 <br>
 
 To open in browser with local server, run vite: 
@@ -23,7 +21,6 @@ and then open the link:
 http://localhost:5173/
 ```
 
-<br>
 <br>
 
 To build:
