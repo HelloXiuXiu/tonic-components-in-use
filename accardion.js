@@ -67,7 +67,6 @@ class MyAccordionDescr extends Tonic {
   }
 }
 
-
 Tonic.add(MyAccordion)
 Tonic.add(MyAccordionDescr)
 
