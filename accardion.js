@@ -44,30 +44,30 @@ props[1] = {
 }
 
 
-// class MyAccordionDescr extends Tonic {
-//   render () {
-//     return this.html`
-//       <ul class="component_props">
-//         <li>
-//           <span class="prop_name">${props[0].name}</span>
-//           <div class="component_info">
-//           <span>attribute for <</span>${props[0].tag}>
-//           <p>${props[0].descr}</p>
-//           </div> 
-//         </li>
-//         <li>
-//           <span class="prop_name">${props[1].name}</span>
-//           <div class="component_info">
-//           <span>attribute for <</span>${props[1].tag}>
-//           <p>${props[1].descr}</p>
-//           </div> 
-//         </li>
-//       </ul>
-//     `
-//   }
-// }
+class MyAccordionDescr extends Tonic {
+  render () {
+    return this.html`
+      <ul class="component_props">
+        <li>
+          <span class="prop_name">${props[0].name}</span>
+          <div class="component_info">
+          <span>attribute for <</span>${props[0].tag}>
+          <p>${props[0].descr}</p>
+          </div> 
+        </li>
+        <li>
+          <span class="prop_name">${props[1].name}</span>
+          <div class="component_info">
+          <span>attribute for <</span>${props[1].tag}>
+          <p>${props[1].descr}</p>
+          </div> 
+        </li>
+      </ul>
+    `
+  }
+}
 
-// Tonic.add(MyAccordion)
+Tonic.add(MyAccordion)
 Tonic.add(MyAccordionDescr)
 
 
