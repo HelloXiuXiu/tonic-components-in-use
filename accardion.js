@@ -27,16 +27,16 @@ class MyAccordion extends Tonic {
     `
   }
 }
-let props = [];
+let accordionProps = [];
 
-props[0] = {
+accordionProps[0] = {
   name: "data-allow-multiple",
   value: [true, false],
   tag: "tonic-accordion",
   descr: "Allow multiple sections to be expanded at one time.",
 }
 
-props[1] = {
+accordionProps[1] = {
   name: "theme",
   value: ["light", "dark"],
   tag: "tonic-accordion",
@@ -49,17 +49,17 @@ class MyAccordionDescr extends Tonic {
     return this.html`
       <ul class="component_props">
         <li>
-          <span class="prop_name">${props[0].name}</span>
+          <span class="prop_name">${accordionProps[0].name}</span>
           <div class="component_info">
-          <span>attribute for <</span>${props[0].tag}>
-          <p>${props[0].descr}</p>
+          <span>attribute for <</span>${accordionProps[0].tag}>
+          <p>${accordionProps[0].descr}</p>
           </div> 
         </li>
         <li>
-          <span class="prop_name">${props[1].name}</span>
+          <span class="prop_name">${accordionProps[1].name}</span>
           <div class="component_info">
-          <span>attribute for <</span>${props[1].tag}>
-          <p>${props[1].descr}</p>
+          <span>attribute for <</span>${accordionProps[1].tag}>
+          <p>${accordionProps[1].descr}</p>
           </div> 
         </li>
       </ul>
